@@ -1,0 +1,14 @@
+.board{
+  display:grid;
+  grid-template-columns: repeat(10, 28px); /* TODO[B]: нүдний өргөн */
+  grid-template-rows: repeat(10, 28px);    /* TODO[C]: нүдний өндөр */
+  gap: 1px;
+  background:#222;
+}
+.cell{
+  width: 28px;   /* TODO[D]: дээрхийн адил */
+  height: 28px;  /* TODO[E]: дээрхийн адил */
+  background:#111;
+}
+.cell.snake{ background: #5bff6a; } /* могойн нүд */
+.cell.food{ background: #ffdd57; }  /* хоолны нүд */
